@@ -128,10 +128,14 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .idea/
-xiaogptconfig.json
-xiao_config.json
 *.json
 config/
 *.mp3
 .pdm-python
 .pdm-build/
+
+### User Define ###
+one_click.bat
+xiaogptconfig.json
+xiao_config.json
+xiao_config.json.example

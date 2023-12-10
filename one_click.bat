@@ -1,5 +1,5 @@
 @echo off
-cd C:\xxx\xiaogpt-main
+cd D:\src\xiaogpt
 set MI_USER=1234556
 set MI_PASS=1234556
 set MI_DID=1234556
