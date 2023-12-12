@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import traceback
 import asyncio
 import functools
 import json
@@ -402,6 +403,8 @@ class MiGPT:
                     await self.tts.synthesize(query, self.ask_gpt(query))
                 except Exception as e:
                     print(f"{self.chatbot.name} 回答出错 {str(e)}")
+                    print("Detailed traceback information:")
+                    traceback.print_exc()
                 else:
                     print("回答完毕")
                 if self.in_conversation:
